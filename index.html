@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devlinks</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+
+  <body>
+
+    <div id="container">
+
+      <div id="profile">
+        <img src="./assets/avatar.png" alt="Foto de Maicon Scott bocejando" />
+        <p>@Michael Scott</p>
+      </div>
+
+      <!-- gatilho onclick, executando a function toggleMode -->
+      <div id="switch" onclick="toggleMode()">
+        <button>
+        </button>
+        <span></span>
+      </div>
+
+      <ul>
+        <li>
+          <a
+            href="https://pt.wikipedia.org/wiki/The_Office_(Estados_Unidos)"
+            target="_blank"
+            >Nossa história</a
+          >
+        </li>
+        <li><a href="https://www.netflix.com/br/">Assista na Netflix</a></li>
+        <li>
+          <a
+            href="https://www.lojageeklandia.com.br/camisetas/camiseta-dunder-mifflin?variant_id=1106"
+            target="_blank"
+            >Produtos da empresa</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.etsy.com/market/dunder_mifflin_art"
+            target="_blank"
+            >Artes da Pam</a
+          >
+        </li>
+      </ul>
+
+
+      <div id="social-links">
+        <a href="https://youtu.be/peA6xbaBMBk?si=dIhbE3Vs1zvtK1mM"><ion-icon name="logo-github"></ion-icon></a>
+        <a href="https://youtu.be/peA6xbaBMBk?si=dIhbE3Vs1zvtK1mM"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="https://youtu.be/peA6xbaBMBk?si=dIhbE3Vs1zvtK1mM"><ion-icon name="logo-youtube"></ion-icon></a>
+        <a href="https://youtu.be/peA6xbaBMBk?si=dIhbE3Vs1zvtK1mM"><ion-icon name="logo-linkedin"></ion-icon></a>
+      </div>
+
+      <footer>
+        That's what she said!
+      </footer>
+
+    </div>
+
+    <!-- Script para instalar o plug-in de icones do ionicons : https://ionic.io/ionicons-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Script criado dentro do arquivo script.JS -->
+    <script src="./script.js"></script>
+
+  </body>
+</html>
