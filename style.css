@@ -96,11 +96,18 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+
+  animation: slide-back .2s;
 }
 
+
+#switch button:hover{
+  outline: 8px solid var(--social-link-hover);
+}
+
+/*Animação aplicada em 0.4 segundos, mantendo no final com forwards*/
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.4s forwards;
 }
 
 #switch span {
@@ -179,15 +186,33 @@ footer {
   font-size: 14px;
 }
 
-
 /* media queries. Backgroung muda a partir do tamanho da tela */
 /* at role */
-@media (min-width: 700px){
-  :root{
-    --bg-url: url(./assets/bg-desktop.jpg)
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
   }
 
-  .light{
-    --bg-url: url(./assets/bg-desktop-light.jpg)
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+/* Animando o botão de switch. Posso dar o nome que eu quiser */
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
