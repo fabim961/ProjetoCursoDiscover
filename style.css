@@ -36,6 +36,9 @@ body {
   */
   /*background: shortcuts*/
   background: var(--bg-url) no-repeat top center/cover;
+
+  /*Será 100% do tamanho do viewport heigth*/
+  height: 100vh;
 }
 
 /* Seletor universal, vai aplicar para todos os elementos dentro do Body*/
@@ -45,7 +48,8 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 450px;
   margin: auto;
   margin-top: 56px;
   padding: 0 24px;
@@ -173,4 +177,17 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+
+/* media queries. Backgroung muda a partir do tamanho da tela */
+/* at role */
+@media (min-width: 700px){
+  :root{
+    --bg-url: url(./assets/bg-desktop.jpg)
+  }
+
+  .light{
+    --bg-url: url(./assets/bg-desktop-light.jpg)
+  }
 }
