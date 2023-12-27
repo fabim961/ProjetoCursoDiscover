@@ -21,4 +21,16 @@ function toggleMode() {
     //se tiver sem light mode, manter img normal
     img.setAttribute("src", "./assets/avatar.png")
   }
+
+
+
+//comandos git utilizados
+//git -v   versionamento do git
+//git init   inicia o repositório
+//git add .    adiciona todos os arquivos ao repositório
+//git add index.html    adiciona somente o arquivo ao repositório
+//git commit -m "mensagem para commit"
+
+
+
 }
